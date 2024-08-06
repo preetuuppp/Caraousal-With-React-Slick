@@ -1,1 +1,1 @@
-# Caraousal-With-React-Slike
+# Caraousal-With-React-Slick
