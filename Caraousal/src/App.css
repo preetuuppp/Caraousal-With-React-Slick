@@ -2,57 +2,119 @@
 @import "slick-carousel/slick/slick-theme.css";
 
 * {
-  background: black;
+  font-family: Georgia, serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .App {
   width: 80%;
-  margin: 10rem auto;
-  height: 570px;
+  margin: auto;
+  background-image: url("https://img.freepik.com/free-photo/3d-dark-grunge-display-background-with-smoky-atmosphere_1048-16218.jpg");
+  padding: 0 100px;
+  background-repeat: repeat;
 }
 
-.text > h3,
-p,
-.button-view {
-  background-color: #fff;
-  text-decoration: none;
+.project {
+  color: goldenrod;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+.cart-image {
+  margin: auto;
+  width: 100%;
+}
+
+.cart-image img {
+  border-radius: 15px 15px 0 0;
+}
+
+.details-div {
+  margin: auto;
+  width: 100%;
+  padding: 5px 0 5px 10px;
 }
 
 .slide {
   transform: scale(0.6);
-  transition: transform 300ms;
+  transition: transform 600ms, width 600ms, height 600ms;
   opacity: 1;
-  border-radius: 50%;
+  width: 90%;
+  background-color: #fff;
   margin: 0 auto;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 15px;
 }
 
 .activeSlide {
   transform: scale(1.1);
   opacity: 1;
+  width: 90%;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 15px;
 }
 
 .arrow {
-  background-color: #ffffff;
   color: #deebed;
   position: absolute;
   cursor: pointer;
   z-index: 10;
+  font-size: 30px;
 }
 
 .arrow svg {
-  transition: color 300ms;
+  transition: color 600ms;
 }
 
 .arrow svg:hover {
-  color: #deebed;
+  color: black;
 }
 
 .next {
-  right: 0%;
+  right: 0;
   top: 50%;
 }
 
+.arrow:hover {
+  background-color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
 .prev {
-  left: 0%;
+  left: 0;
   top: 50%;
+}
+
+.viewmore {
+  background: black;
+  padding: 7px 10px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  margin: 10px 0;
+  font-size: 12px;
+}
+
+.details-div h3 {
+  font-weight: 600;
+}
+
+.details-div p {
+  display: flex;
+  gap: 10px;
+  font-weight: 500;
+  margin: 7px 0;
+}
+
+.details-div span {
+  margin-top: 5px;
 }
