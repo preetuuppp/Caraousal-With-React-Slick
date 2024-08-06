@@ -118,3 +118,86 @@
 .details-div span {
   margin-top: 5px;
 }
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .App {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .project {
+    font-size: 30px;
+    padding-top: 5px;
+  }
+
+  .slide {
+    transform: scale(0.8);
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  .activeSlide {
+    transform: scale(1);
+    width: 95%;
+    margin: 30px auto;
+  }
+
+  .arrow {
+    font-size: 25px;
+  }
+
+  .viewmore {
+    padding: 5px 8px;
+    font-size: 10px;
+  }
+
+  .details-div h3 {
+    font-size: 18px;
+  }
+
+  .details-div p {
+    font-size: 14px;
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .App {
+    padding: 0 10px;
+  }
+
+  .project {
+    font-size: 24px;
+  }
+
+  .slide {
+    transform: scale(0.7);
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .activeSlide {
+    transform: scale(0.9);
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .arrow {
+    font-size: 20px;
+  }
+
+  .viewmore {
+    padding: 4px 6px;
+    font-size: 9px;
+  }
+
+  .details-div h3 {
+    font-size: 16px;
+  }
+
+  .details-div p {
+    font-size: 12px;
+    gap: 3px;
+  }
+}
